@@ -1,0 +1,6 @@
+filename,true_class,left,top,right,bottom,crop_width,crop_height,crop_input_padding_fraction,full_prediction,full_score,full_correct,crop_prediction,crop_score,crop_correct
+brinjal.jpeg,Brinjal,215,145,560,875,345,730,0.5267857142857143,Carrot,0.9997112154960632,False,Carrot,0.999381422996521,False
+broccoli.jpeg,Broccoli,270,92,780,615,510,523,0.0267857142857143,Broccoli,0.8457454442977905,True,Broccoli,0.9999743700027466,True
+carrot.jpeg,Carrot,305,215,475,850,170,635,0.7321428571428572,Carrot,1.0,True,Carrot,1.0,True
+potato.jpeg,Potato,280,235,650,500,370,265,0.2857142857142857,Carrot,0.8968426585197449,False,Carrot,0.7922873497009277,False
+tomato.jpeg,Tomato,258,225,647,592,389,367,0.0580357142857143,Tomato,0.9936140179634094,True,Tomato,0.9759767651557922,True

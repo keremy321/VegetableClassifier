@@ -1,0 +1,107 @@
+{
+  "best_epoch": 8,
+  "checkpoint_sha256": "4d312113394e92367297adc9e16aef2f0442e97b44b8316647c331ec630c38a4",
+  "class_to_idx": {
+    "Brinjal": 0,
+    "Broccoli": 1,
+    "Carrot": 2,
+    "Potato": 3,
+    "Tomato": 4
+  },
+  "test_count": 1000,
+  "correct_count": 1000,
+  "accuracy": 1.0,
+  "macro": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  },
+  "per_class": {
+    "Brinjal": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 200
+    },
+    "Broccoli": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 200
+    },
+    "Carrot": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 200
+    },
+    "Potato": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 200
+    },
+    "Tomato": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 200
+    }
+  },
+  "confusion_matrix_rows_true_columns_predicted": [
+    [
+      200,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      200,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      200,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      200,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      200
+    ]
+  ],
+  "training_wall_seconds": 326.44356229999903,
+  "latency": {
+    "device": "cuda",
+    "batch_size": 1,
+    "warmup": 20,
+    "repetitions": 100,
+    "model_forward_only": {
+      "mean_ms": 4.264428999958909,
+      "median_ms": 3.664050000224961,
+      "p95_ms": 7.289880000826087,
+      "scope": "Model forward on a resident tensor, excluding preprocessing, transfers, softmax, and model load."
+    },
+    "file_to_scores": {
+      "mean_ms": 6.349326000163273,
+      "median_ms": 5.5478000012954,
+      "p95_ms": 11.408344999108522,
+      "scope": "File read and decode, EXIF/RGB conversion, resizing, normalization, transfers, model forward, and CPU softmax score output. Excludes model load and Gradio/browser overhead."
+    }
+  }
+}

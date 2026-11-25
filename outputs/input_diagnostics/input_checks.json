@@ -1,0 +1,300 @@
+{
+  "baseline_checks": {
+    "checkpoint_sha256": "7e63ad147ac022e372febd6ed688d1bf7c25aea573223d99a3faf9ed542aedb6",
+    "matches_original_app_checkpoint": true,
+    "manifest_matches_checkpoint": true,
+    "class_order_matches_dataset_and_ui": true,
+    "all_modules_in_eval_mode": true,
+    "rgb_conversion_and_exif_6_verified": true,
+    "app_and_validation_input_tensors_identical": true,
+    "softmax_index_mapping_verified": true,
+    "verification_inputs": [
+      "1195.jpg",
+      "1400.jpg"
+    ]
+  },
+  "dataset_sample": [
+    {
+      "split": "train",
+      "label": "Brinjal",
+      "file": "0655.jpg"
+    },
+    {
+      "split": "train",
+      "label": "Brinjal",
+      "file": "0115.jpg"
+    },
+    {
+      "split": "train",
+      "label": "Brinjal",
+      "file": "0026.jpg"
+    },
+    {
+      "split": "validation",
+      "label": "Brinjal",
+      "file": "1390.jpg"
+    },
+    {
+      "split": "validation",
+      "label": "Brinjal",
+      "file": "1270.jpg"
+    },
+    {
+      "split": "validation",
+      "label": "Brinjal",
+      "file": "1260.jpg"
+    },
+    {
+      "split": "train",
+      "label": "Broccoli",
+      "file": "0229.jpg"
+    },
+    {
+      "split": "train",
+      "label": "Broccoli",
+      "file": "0143.jpg"
+    },
+    {
+      "split": "train",
+      "label": "Broccoli",
+      "file": "0755.jpg"
+    },
+    {
+      "split": "validation",
+      "label": "Broccoli",
+      "file": "1227.jpg"
+    },
+    {
+      "split": "validation",
+      "label": "Broccoli",
+      "file": "1374.jpg"
+    },
+    {
+      "split": "validation",
+      "label": "Broccoli",
+      "file": "1390.jpg"
+    },
+    {
+      "split": "train",
+      "label": "Carrot",
+      "file": "0914.jpg"
+    },
+    {
+      "split": "train",
+      "label": "Carrot",
+      "file": "0559.jpg"
+    },
+    {
+      "split": "train",
+      "label": "Carrot",
+      "file": "0090.jpg"
+    },
+    {
+      "split": "validation",
+      "label": "Carrot",
+      "file": "1352.jpg"
+    },
+    {
+      "split": "validation",
+      "label": "Carrot",
+      "file": "1309.jpg"
+    },
+    {
+      "split": "validation",
+      "label": "Carrot",
+      "file": "1209.jpg"
+    },
+    {
+      "split": "train",
+      "label": "Potato",
+      "file": "0031.jpg"
+    },
+    {
+      "split": "train",
+      "label": "Potato",
+      "file": "0096.jpg"
+    },
+    {
+      "split": "train",
+      "label": "Potato",
+      "file": "0224.jpg"
+    },
+    {
+      "split": "validation",
+      "label": "Potato",
+      "file": "1258.jpg"
+    },
+    {
+      "split": "validation",
+      "label": "Potato",
+      "file": "1328.jpg"
+    },
+    {
+      "split": "validation",
+      "label": "Potato",
+      "file": "1353.jpg"
+    },
+    {
+      "split": "train",
+      "label": "Tomato",
+      "file": "0028.jpg"
+    },
+    {
+      "split": "train",
+      "label": "Tomato",
+      "file": "0575.jpg"
+    },
+    {
+      "split": "train",
+      "label": "Tomato",
+      "file": "0204.jpg"
+    },
+    {
+      "split": "validation",
+      "label": "Tomato",
+      "file": "1384.jpg"
+    },
+    {
+      "split": "validation",
+      "label": "Tomato",
+      "file": "1367.jpg"
+    },
+    {
+      "split": "validation",
+      "label": "Tomato",
+      "file": "1380.jpg"
+    }
+  ],
+  "personal_inputs": [
+    {
+      "model": "Small CNN (128)",
+      "filename": "brinjal.jpeg",
+      "oriented_image_size": [
+        768,
+        1024
+      ],
+      "resized_content_size": [
+        96,
+        128
+      ],
+      "padding_fraction": 0.25
+    },
+    {
+      "model": "Small CNN (128)",
+      "filename": "broccoli.jpeg",
+      "oriented_image_size": [
+        1024,
+        768
+      ],
+      "resized_content_size": [
+        128,
+        96
+      ],
+      "padding_fraction": 0.25
+    },
+    {
+      "model": "Small CNN (128)",
+      "filename": "carrot.jpeg",
+      "oriented_image_size": [
+        768,
+        1024
+      ],
+      "resized_content_size": [
+        96,
+        128
+      ],
+      "padding_fraction": 0.25
+    },
+    {
+      "model": "Small CNN (128)",
+      "filename": "potato.jpeg",
+      "oriented_image_size": [
+        1024,
+        768
+      ],
+      "resized_content_size": [
+        128,
+        96
+      ],
+      "padding_fraction": 0.25
+    },
+    {
+      "model": "Small CNN (128)",
+      "filename": "tomato.jpeg",
+      "oriented_image_size": [
+        1024,
+        768
+      ],
+      "resized_content_size": [
+        128,
+        96
+      ],
+      "padding_fraction": 0.25
+    },
+    {
+      "model": "ResNet18 (224)",
+      "filename": "brinjal.jpeg",
+      "oriented_image_size": [
+        768,
+        1024
+      ],
+      "resized_content_size": [
+        168,
+        224
+      ],
+      "padding_fraction": 0.25
+    },
+    {
+      "model": "ResNet18 (224)",
+      "filename": "broccoli.jpeg",
+      "oriented_image_size": [
+        1024,
+        768
+      ],
+      "resized_content_size": [
+        224,
+        168
+      ],
+      "padding_fraction": 0.25
+    },
+    {
+      "model": "ResNet18 (224)",
+      "filename": "carrot.jpeg",
+      "oriented_image_size": [
+        768,
+        1024
+      ],
+      "resized_content_size": [
+        168,
+        224
+      ],
+      "padding_fraction": 0.25
+    },
+    {
+      "model": "ResNet18 (224)",
+      "filename": "potato.jpeg",
+      "oriented_image_size": [
+        1024,
+        768
+      ],
+      "resized_content_size": [
+        224,
+        168
+      ],
+      "padding_fraction": 0.25
+    },
+    {
+      "model": "ResNet18 (224)",
+      "filename": "tomato.jpeg",
+      "oriented_image_size": [
+        1024,
+        768
+      ],
+      "resized_content_size": [
+        224,
+        168
+      ],
+      "padding_fraction": 0.25
+    }
+  ]
+}

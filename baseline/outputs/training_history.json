@@ -1,0 +1,152 @@
+{
+  "model": {
+    "channels": [
+      32,
+      64,
+      128
+    ],
+    "classes": 5
+  },
+  "class_to_idx": {
+    "Brinjal": 0,
+    "Broccoli": 1,
+    "Carrot": 2,
+    "Potato": 3,
+    "Tomato": 4
+  },
+  "preprocessing": {
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGB",
+    "exif_transpose": true,
+    "resize": "letterbox_bilinear",
+    "fill": [
+      128,
+      128,
+      128
+    ],
+    "mean": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "std": [
+      0.5,
+      0.5,
+      0.5
+    ]
+  },
+  "augmentation": {
+    "rotation_degrees": 12,
+    "horizontal_flip_p": 0.5,
+    "brightness": 0.15,
+    "saturation": 0.15
+  },
+  "training": {
+    "optimizer": "Adam",
+    "loss": "CrossEntropyLoss",
+    "learning_rate": 0.001,
+    "batch_size": 32,
+    "max_epochs": 20,
+    "patience": 4,
+    "seed": 42,
+    "workers": 0
+  },
+  "environment": {
+    "python": "3.14.0",
+    "os": "Windows-11-10.0.26200-SP0",
+    "windows_edition": "Professional",
+    "torch": "2.14.1+cu130",
+    "torchvision": "0.29.1+cu130",
+    "cuda_runtime": "13.0",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+    "compute_capability": [
+      12,
+      0
+    ],
+    "cuda_architectures": [
+      "sm_75",
+      "sm_80",
+      "sm_86",
+      "sm_90",
+      "sm_100",
+      "sm_120"
+    ],
+    "cudnn": 92400,
+    "nvidia_driver": "617.42"
+  },
+  "parameter_count": 94117,
+  "manifest_sha256": "bc0b31b0e41a4c137666405d4f49c8fd5b0c208a5fd3bfdbaf861f872be5d116",
+  "selection_criterion": "minimum validation loss (strict improvement)",
+  "sample_counts": {
+    "train": 5000,
+    "validation": 1000
+  },
+  "best_epoch": 3,
+  "best_validation_loss": 0.08054727172851563,
+  "best_validation_accuracy": 0.978,
+  "training_wall_seconds": 115.56060879999859,
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 0.483592236328125,
+      "train_accuracy": 0.8554,
+      "validation_loss": 0.24228346252441407,
+      "validation_accuracy": 0.911,
+      "epoch_seconds": 17.883058999999776
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.2416503173828125,
+      "train_accuracy": 0.9286,
+      "validation_loss": 0.13545315551757814,
+      "validation_accuracy": 0.961,
+      "epoch_seconds": 16.906478299999435
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.20087899169921875,
+      "train_accuracy": 0.9368,
+      "validation_loss": 0.08054727172851563,
+      "validation_accuracy": 0.978,
+      "epoch_seconds": 16.449730800002726
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.15390162353515624,
+      "train_accuracy": 0.9506,
+      "validation_loss": 0.10017565155029297,
+      "validation_accuracy": 0.967,
+      "epoch_seconds": 16.701134299997648
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.14497777099609374,
+      "train_accuracy": 0.9534,
+      "validation_loss": 0.2029817352294922,
+      "validation_accuracy": 0.916,
+      "epoch_seconds": 15.256379700000252
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.10960521240234375,
+      "train_accuracy": 0.9676,
+      "validation_loss": 0.08145262908935547,
+      "validation_accuracy": 0.971,
+      "epoch_seconds": 15.22323509999842
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.10092600708007812,
+      "train_accuracy": 0.9696,
+      "validation_loss": 0.0896051025390625,
+      "validation_accuracy": 0.972,
+      "epoch_seconds": 17.112594199999876
+    }
+  ],
+  "early_stopping_triggered": true,
+  "checkpoint_sha256": "7e63ad147ac022e372febd6ed688d1bf7c25aea573223d99a3faf9ed542aedb6"
+}

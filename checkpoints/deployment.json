@@ -1,0 +1,11 @@
+{
+  "model": "resnet18",
+  "criterion": "lowest selected validation loss, baseline on tie",
+  "validation_loss": {
+    "baseline": 0.08054727172851563,
+    "resnet18": 5.7110311463475225e-06
+  },
+  "checkpoint": "checkpoints/resnet18/best.pt",
+  "checkpoint_sha256": "4d312113394e92367297adc9e16aef2f0442e97b44b8316647c331ec630c38a4",
+  "best_epoch": 8
+}

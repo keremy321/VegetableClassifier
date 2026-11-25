@@ -1,0 +1,107 @@
+{
+  "best_epoch": 3,
+  "checkpoint_sha256": "7e63ad147ac022e372febd6ed688d1bf7c25aea573223d99a3faf9ed542aedb6",
+  "class_to_idx": {
+    "Brinjal": 0,
+    "Broccoli": 1,
+    "Carrot": 2,
+    "Potato": 3,
+    "Tomato": 4
+  },
+  "test_count": 1000,
+  "correct_count": 977,
+  "accuracy": 0.977,
+  "macro": {
+    "precision": 0.977025526137014,
+    "recall": 0.977,
+    "f1": 0.9769712691966627
+  },
+  "per_class": {
+    "Brinjal": {
+      "precision": 0.9651741293532339,
+      "recall": 0.97,
+      "f1": 0.9675810473815462,
+      "support": 200
+    },
+    "Broccoli": {
+      "precision": 0.9655172413793104,
+      "recall": 0.98,
+      "f1": 0.9727047146401985,
+      "support": 200
+    },
+    "Carrot": {
+      "precision": 0.9900990099009901,
+      "recall": 1.0,
+      "f1": 0.9950248756218906,
+      "support": 200
+    },
+    "Potato": {
+      "precision": 0.9949494949494949,
+      "recall": 0.985,
+      "f1": 0.9899497487437185,
+      "support": 200
+    },
+    "Tomato": {
+      "precision": 0.9693877551020408,
+      "recall": 0.95,
+      "f1": 0.9595959595959596,
+      "support": 200
+    }
+  },
+  "confusion_matrix_rows_true_columns_predicted": [
+    [
+      194,
+      3,
+      0,
+      0,
+      3
+    ],
+    [
+      1,
+      196,
+      0,
+      0,
+      3
+    ],
+    [
+      0,
+      0,
+      200,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      1,
+      197,
+      0
+    ],
+    [
+      4,
+      4,
+      1,
+      1,
+      190
+    ]
+  ],
+  "training_wall_seconds": 115.56060879999859,
+  "latency": {
+    "device": "cuda",
+    "batch_size": 1,
+    "warmup": 20,
+    "repetitions": 100,
+    "model_forward_only": {
+      "mean_ms": 0.5921100001796731,
+      "median_ms": 0.5411000001913635,
+      "p95_ms": 0.9469500022532876,
+      "scope": "Model forward on a resident tensor, excluding preprocessing, transfers, softmax, and model load."
+    },
+    "file_to_scores": {
+      "mean_ms": 2.730636999840499,
+      "median_ms": 2.5427000000490807,
+      "p95_ms": 4.796020001958822,
+      "scope": "File read and decode, EXIF/RGB conversion, resizing, normalization, transfers, model forward, and CPU softmax score output. Excludes model load and Gradio/browser overhead."
+    }
+  }
+}

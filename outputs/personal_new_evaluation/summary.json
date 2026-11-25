@@ -1,0 +1,144 @@
+{
+  "model": "ResNet18",
+  "best_epoch": 8,
+  "checkpoint_sha256": "4d312113394e92367297adc9e16aef2f0442e97b44b8316647c331ec630c38a4",
+  "preprocessing": {
+    "size": [
+      224,
+      224
+    ],
+    "mode": "RGB",
+    "exif_transpose": true,
+    "resize": "letterbox_bilinear",
+    "fill": [
+      124,
+      116,
+      104
+    ],
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "device": "cuda",
+  "match_rule": "SHA-256 of dimensions and EXIF-oriented decoded RGB pixels",
+  "raw_image_files": 14,
+  "readable_image_files": 14,
+  "ignored_files": [],
+  "unreadable_images": [],
+  "original_reference_image_files": 5,
+  "collection_files_matching_originals": 5,
+  "duplicate_copies_within_collection": 0,
+  "duplicate_groups_within_collection": 0,
+  "unique_images_evaluated": 14,
+  "overall": {
+    "correct": 11,
+    "total": 14,
+    "label_conflicts": 0
+  },
+  "cohorts": {
+    "matches_original": {
+      "correct": 3,
+      "total": 5,
+      "label_conflicts": 0
+    },
+    "additional_unique": {
+      "correct": 8,
+      "total": 9,
+      "label_conflicts": 0
+    }
+  },
+  "per_class": {
+    "Brinjal": {
+      "matches_original": {
+        "correct": 0,
+        "total": 1,
+        "label_conflicts": 0
+      },
+      "additional_unique": {
+        "correct": 0,
+        "total": 1,
+        "label_conflicts": 0
+      },
+      "combined": {
+        "correct": 0,
+        "total": 2,
+        "label_conflicts": 0
+      }
+    },
+    "Broccoli": {
+      "matches_original": {
+        "correct": 1,
+        "total": 1,
+        "label_conflicts": 0
+      },
+      "additional_unique": {
+        "correct": 2,
+        "total": 2,
+        "label_conflicts": 0
+      },
+      "combined": {
+        "correct": 3,
+        "total": 3,
+        "label_conflicts": 0
+      }
+    },
+    "Carrot": {
+      "matches_original": {
+        "correct": 1,
+        "total": 1,
+        "label_conflicts": 0
+      },
+      "additional_unique": {
+        "correct": 0,
+        "total": 0,
+        "label_conflicts": 0
+      },
+      "combined": {
+        "correct": 1,
+        "total": 1,
+        "label_conflicts": 0
+      }
+    },
+    "Potato": {
+      "matches_original": {
+        "correct": 0,
+        "total": 1,
+        "label_conflicts": 0
+      },
+      "additional_unique": {
+        "correct": 4,
+        "total": 4,
+        "label_conflicts": 0
+      },
+      "combined": {
+        "correct": 4,
+        "total": 5,
+        "label_conflicts": 0
+      }
+    },
+    "Tomato": {
+      "matches_original": {
+        "correct": 1,
+        "total": 1,
+        "label_conflicts": 0
+      },
+      "additional_unique": {
+        "correct": 2,
+        "total": 2,
+        "label_conflicts": 0
+      },
+      "combined": {
+        "correct": 3,
+        "total": 3,
+        "label_conflicts": 0
+      }
+    }
+  }
+}

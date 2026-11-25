@@ -1,0 +1,207 @@
+{
+  "model": "ResNet18",
+  "checkpoint_sha256": "4d312113394e92367297adc9e16aef2f0442e97b44b8316647c331ec630c38a4",
+  "device": "cuda",
+  "preprocessing": {
+    "size": [
+      224,
+      224
+    ],
+    "mode": "RGB",
+    "exif_transpose": true,
+    "resize": "letterbox_bilinear",
+    "fill": [
+      124,
+      116,
+      104
+    ],
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "crop_manifest_sha256": "c597c943a1c699260b85e3f2ad75af46c9087ba907c82f2fcc2308981887dcdd",
+  "coordinates": "EXIF-oriented RGB pixel coordinates; left/top inclusive and right/bottom exclusive",
+  "full_correct": 3,
+  "crop_correct": 3,
+  "results": [
+    {
+      "filename": "brinjal.jpeg",
+      "true_class": "Brinjal",
+      "left": 215,
+      "top": 145,
+      "right": 560,
+      "bottom": 875,
+      "crop_width": 345,
+      "crop_height": 730,
+      "crop_input_padding_fraction": 0.5267857142857143,
+      "full_prediction": "Carrot",
+      "full_score": 0.9997112154960632,
+      "full_correct": false,
+      "crop_prediction": "Carrot",
+      "crop_score": 0.999381422996521,
+      "crop_correct": false
+    },
+    {
+      "filename": "broccoli.jpeg",
+      "true_class": "Broccoli",
+      "left": 270,
+      "top": 92,
+      "right": 780,
+      "bottom": 615,
+      "crop_width": 510,
+      "crop_height": 523,
+      "crop_input_padding_fraction": 0.0267857142857143,
+      "full_prediction": "Broccoli",
+      "full_score": 0.8457454442977905,
+      "full_correct": true,
+      "crop_prediction": "Broccoli",
+      "crop_score": 0.9999743700027466,
+      "crop_correct": true
+    },
+    {
+      "filename": "carrot.jpeg",
+      "true_class": "Carrot",
+      "left": 305,
+      "top": 215,
+      "right": 475,
+      "bottom": 850,
+      "crop_width": 170,
+      "crop_height": 635,
+      "crop_input_padding_fraction": 0.7321428571428572,
+      "full_prediction": "Carrot",
+      "full_score": 1.0,
+      "full_correct": true,
+      "crop_prediction": "Carrot",
+      "crop_score": 1.0,
+      "crop_correct": true
+    },
+    {
+      "filename": "potato.jpeg",
+      "true_class": "Potato",
+      "left": 280,
+      "top": 235,
+      "right": 650,
+      "bottom": 500,
+      "crop_width": 370,
+      "crop_height": 265,
+      "crop_input_padding_fraction": 0.2857142857142857,
+      "full_prediction": "Carrot",
+      "full_score": 0.8968426585197449,
+      "full_correct": false,
+      "crop_prediction": "Carrot",
+      "crop_score": 0.7922873497009277,
+      "crop_correct": false
+    },
+    {
+      "filename": "tomato.jpeg",
+      "true_class": "Tomato",
+      "left": 258,
+      "top": 225,
+      "right": 647,
+      "bottom": 592,
+      "crop_width": 389,
+      "crop_height": 367,
+      "crop_input_padding_fraction": 0.0580357142857143,
+      "full_prediction": "Tomato",
+      "full_score": 0.9936140179634094,
+      "full_correct": true,
+      "crop_prediction": "Tomato",
+      "crop_score": 0.9759767651557922,
+      "crop_correct": true
+    }
+  ],
+  "all_class_scores": [
+    {
+      "filename": "brinjal.jpeg",
+      "full_scores": {
+        "Brinjal": 0.00017782354552764446,
+        "Broccoli": 2.6538900783634745e-06,
+        "Carrot": 0.9997112154960632,
+        "Potato": 4.285445527330012e-07,
+        "Tomato": 0.0001077960041584447
+      },
+      "crop_scores": {
+        "Brinjal": 0.0005321612115949392,
+        "Broccoli": 6.189194436956313e-07,
+        "Carrot": 0.999381422996521,
+        "Potato": 6.250205615287996e-07,
+        "Tomato": 8.524348959326744e-05
+      }
+    },
+    {
+      "filename": "broccoli.jpeg",
+      "full_scores": {
+        "Brinjal": 0.07370922714471817,
+        "Broccoli": 0.8457454442977905,
+        "Carrot": 0.01741461083292961,
+        "Potato": 0.04881034791469574,
+        "Tomato": 0.01432039588689804
+      },
+      "crop_scores": {
+        "Brinjal": 5.278383468976244e-06,
+        "Broccoli": 0.9999743700027466,
+        "Carrot": 1.5478409522984293e-06,
+        "Potato": 8.614320904598571e-06,
+        "Tomato": 1.0189906788582448e-05
+      }
+    },
+    {
+      "filename": "carrot.jpeg",
+      "full_scores": {
+        "Brinjal": 4.999624714230322e-09,
+        "Broccoli": 2.8839278187753337e-10,
+        "Carrot": 1.0,
+        "Potato": 3.6597851416075855e-09,
+        "Tomato": 3.039967211293515e-08
+      },
+      "crop_scores": {
+        "Brinjal": 3.646755120101375e-09,
+        "Broccoli": 6.50031764526382e-11,
+        "Carrot": 1.0,
+        "Potato": 2.0441541792592943e-09,
+        "Tomato": 3.208125542997209e-09
+      }
+    },
+    {
+      "filename": "potato.jpeg",
+      "full_scores": {
+        "Brinjal": 2.8823116736020893e-05,
+        "Broccoli": 6.274206043599406e-08,
+        "Carrot": 0.8968426585197449,
+        "Potato": 0.10312657058238983,
+        "Tomato": 1.9039698599954136e-06
+      },
+      "crop_scores": {
+        "Brinjal": 0.026153139770030975,
+        "Broccoli": 6.542760092997923e-05,
+        "Carrot": 0.7922873497009277,
+        "Potato": 0.18148206174373627,
+        "Tomato": 1.19728310892242e-05
+      }
+    },
+    {
+      "filename": "tomato.jpeg",
+      "full_scores": {
+        "Brinjal": 3.7099737255630316e-06,
+        "Broccoli": 2.2427996959617502e-10,
+        "Carrot": 0.006345842964947224,
+        "Potato": 3.650779035524465e-05,
+        "Tomato": 0.9936140179634094
+      },
+      "crop_scores": {
+        "Brinjal": 0.0013575601624324918,
+        "Broccoli": 1.4709146398672601e-06,
+        "Carrot": 0.0001163984343293123,
+        "Potato": 0.022547896951436996,
+        "Tomato": 0.9759767651557922
+      }
+    }
+  ]
+}

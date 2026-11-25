@@ -1,0 +1,8 @@
+* text=auto eol=lf
+*.pdf binary
+*.png binary
+*.jpeg binary
+*.jpg binary
+
+# Checkpoints record the SHA-256 of the manifest's exact bytes.
+/outputs/dataset_manifest.csv -text whitespace=cr-at-eol

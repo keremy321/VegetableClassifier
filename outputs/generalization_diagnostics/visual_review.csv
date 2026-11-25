@@ -1,0 +1,25 @@
+id,path_a,path_b,distance,best_alignment,review,visual_basis
+P00003,train/Brinjal/0690.jpg,validation/Brinjal/1370.jpg,0,direct,visually_near_identical,"The basket edges, reflective highlights, stems, and positions of the green brinjals align."
+P00006,train/Broccoli/0047.jpg,validation/Broccoli/1375.jpg,0,direct,visually_near_identical,"The broccoli heads, stems, torn leaf edges, and black bowl align."
+P00055,train/Carrot/0102.jpg,validation/Carrot/1211.jpg,0,direct,visually_near_identical,"The overlapping carrot ends, abrasion marks, and basket edge align."
+P00093,train/Potato/0585.jpg,validation/Potato/1238.jpg,0,direct,visually_near_identical,"The foreground potato scars, hand, and surrounding blurred potatoes align."
+P00096,train/Tomato/0268.jpg,validation/Tomato/1232.jpg,0,direct,visually_near_identical,"The three red tomatoes, stems, wall shadows, and leaf outlines align."
+P02156,train/Potato/0436.jpg,validation/Potato/1382.jpg,6,flip_b,uncertain,Similar white-background potato cutouts after mirroring. Surface marks and shape differ.
+P02500,train/Brinjal/0576.jpg,validation/Brinjal/1285.jpg,8,direct,shared_scene,"The basket, surrounding vegetables, and sleeve match. The held brinjal is repositioned."
+P00001,train/Brinjal/0176.jpg,test/Brinjal/1024.jpg,0,direct,visually_near_identical,"The green brinjal calyx, scarred stem, hand, and leafy background align."
+P00007,train/Broccoli/0053.jpg,test/Broccoli/1184.jpg,0,direct,visually_near_identical,"The broccoli floret borders, stem tips, and beige wrapping fold align."
+P00054,train/Carrot/0022.jpg,test/Carrot/1062.jpg,0,direct,visually_near_identical,"The carrot tips, surface marks, and background stalks share the same arrangement."
+P00516,train/Potato/0057.jpg,test/Potato/1139.jpg,2,direct,visually_near_identical,"The potato with a green patch, thumb position, and surrounding pile align."
+P00550,train/Tomato/0531.jpg,test/Tomato/1140.jpg,2,direct,uncertain,Both show a small red tomato on a gray background. The silhouette and position differ.
+P02124,train/Potato/0074.jpg,test/Potato/1157.jpg,6,flip_b,uncertain,Similar mirrored potato cutouts. The shape and speckling do not establish source identity.
+P03064,train/Carrot/0573.jpg,test/Carrot/1116.jpg,8,direct,shared_scene,"The pile, basket, black tray, and hand match. Some carrot positions and viewpoint differ."
+P00552,validation/Brinjal/1295.jpg,test/Brinjal/1068.jpg,2,direct,shared_scene,"The pavement debris, brick edge, and sleeve match. The hand and fruit move within the frame."
+P00098,validation/Broccoli/1252.jpg,test/Broccoli/1175.jpg,0,direct,visually_near_identical,"The overlapping broccoli heads, torn stems, and beige folds align."
+P00102,validation/Carrot/1205.jpg,test/Carrot/1154.jpg,0,direct,visually_near_identical,"The held carrot, hand, pile, and tray edge align."
+P00106,validation/Potato/1263.jpg,test/Potato/1042.jpg,0,direct,visually_near_identical,"The green potato patch, surface marks, fingertips, and surrounding pile align."
+P00596,validation/Tomato/1232.jpg,test/Tomato/1074.jpg,2,direct,visually_near_identical,"The same wall, vine branches, leaf shapes, and three tomatoes align with a small framing change."
+P03517,validation/Potato/1219.jpg,test/Potato/1022.jpg,8,flip_b,uncertain,White-background potato cutouts share a broad outline. Their color and blemish patterns differ.
+P03503,validation/Carrot/1366.jpg,test/Carrot/1055.jpg,8,direct,shared_scene,"The basket, foliage, and carrot pile match with a changed viewpoint or framing."
+P02971,train/Carrot/0336.jpg,validation/Tomato/1251.jpg,8,flip_a,different_subjects,One tapered carrot and three tomatoes on pale backgrounds. Both labels fit their visible subjects.
+P03190,train/Carrot/0855.jpg,validation/Tomato/1251.jpg,8,flip_b,different_subjects,One carrot and three tomatoes with similar vertical placement. Both labels fit their visible subjects.
+P03334,train/Potato/0506.jpg,test/Broccoli/1122.jpg,8,direct,different_subjects,One potato on a lid and a held broccoli crown. Both labels fit their visible subjects.

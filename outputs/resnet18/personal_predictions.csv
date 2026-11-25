@@ -1,0 +1,6 @@
+filename,true_class,predicted_class,predicted_class_score,correct
+brinjal.jpeg,Brinjal,Carrot,0.9997112154960632,False
+broccoli.jpeg,Broccoli,Broccoli,0.8457454442977905,True
+carrot.jpeg,Carrot,Carrot,1.0,True
+potato.jpeg,Potato,Carrot,0.8968426585197449,False
+tomato.jpeg,Tomato,Tomato,0.9936140179634094,True

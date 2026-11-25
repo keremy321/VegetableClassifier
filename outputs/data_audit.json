@@ -1,0 +1,131 @@
+{
+  "classes": [
+    "Brinjal",
+    "Broccoli",
+    "Carrot",
+    "Potato",
+    "Tomato"
+  ],
+  "source_class_folders": {
+    "train": [
+      "Bean",
+      "Bitter_Gourd",
+      "Bottle_Gourd",
+      "Brinjal",
+      "Broccoli",
+      "Cabbage",
+      "Capsicum",
+      "Carrot",
+      "Cauliflower",
+      "Cucumber",
+      "Papaya",
+      "Potato",
+      "Pumpkin",
+      "Radish",
+      "Tomato"
+    ],
+    "validation": [
+      "Bean",
+      "Bitter_Gourd",
+      "Bottle_Gourd",
+      "Brinjal",
+      "Broccoli",
+      "Cabbage",
+      "Capsicum",
+      "Carrot",
+      "Cauliflower",
+      "Cucumber",
+      "Papaya",
+      "Potato",
+      "Pumpkin",
+      "Radish",
+      "Tomato"
+    ],
+    "test": [
+      "Bean",
+      "Bitter_Gourd",
+      "Bottle_Gourd",
+      "Brinjal",
+      "Broccoli",
+      "Cabbage",
+      "Capsicum",
+      "Carrot",
+      "Cauliflower",
+      "Cucumber",
+      "Papaya",
+      "Potato",
+      "Pumpkin",
+      "Radish",
+      "Tomato"
+    ]
+  },
+  "source_counts": {
+    "train": {
+      "Brinjal": 1000,
+      "Broccoli": 1000,
+      "Carrot": 1000,
+      "Potato": 1000,
+      "Tomato": 1000
+    },
+    "validation": {
+      "Brinjal": 200,
+      "Broccoli": 200,
+      "Carrot": 200,
+      "Potato": 200,
+      "Tomato": 200
+    },
+    "test": {
+      "Brinjal": 200,
+      "Broccoli": 200,
+      "Carrot": 200,
+      "Potato": 200,
+      "Tomato": 200
+    }
+  },
+  "retained_counts": {
+    "train": {
+      "Brinjal": 1000,
+      "Broccoli": 1000,
+      "Carrot": 1000,
+      "Potato": 1000,
+      "Tomato": 1000
+    },
+    "validation": {
+      "Brinjal": 200,
+      "Broccoli": 200,
+      "Carrot": 200,
+      "Potato": 200,
+      "Tomato": 200
+    },
+    "test": {
+      "Brinjal": 200,
+      "Broccoli": 200,
+      "Carrot": 200,
+      "Potato": 200,
+      "Tomato": 200
+    }
+  },
+  "unreadable_images": [],
+  "ignored_non_image_files": [],
+  "duplicate_group_count": 1,
+  "cross_split_duplicate_group_count": 0,
+  "conflicting_label_group_count": 0,
+  "removed_duplicate_images": 0,
+  "duplicate_groups": [
+    {
+      "pixel_sha256": "e28b64f779a1abece73d46041953ef611976624e94df2d8a0c34d490e737f2fc",
+      "cross_split": false,
+      "conflicting_labels": false,
+      "members": [
+        "train/Tomato/0125.jpg",
+        "train/Tomato/0602.jpg"
+      ],
+      "retained": [
+        "train/Tomato/0125.jpg",
+        "train/Tomato/0602.jpg"
+      ]
+    }
+  ],
+  "rule": "SHA-256 of width, height, and decoded EXIF-oriented RGB pixels. Drop all members of conflicting-label groups. Otherwise retain members in the highest-priority split (test, then validation, then train). Same-label duplicates within the retained split are kept. Exact matching does not detect near duplicates.",
+  "manifest_sha256": "bc0b31b0e41a4c137666405d4f49c8fd5b0c208a5fd3bfdbaf861f872be5d116"
+}

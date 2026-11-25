@@ -1,0 +1,232 @@
+{
+  "deployment": {
+    "model": "resnet18",
+    "criterion": "lowest selected validation loss, baseline on tie",
+    "validation_loss": {
+      "baseline": 0.08054727172851563,
+      "resnet18": 5.7110311463475225e-06
+    },
+    "checkpoint": "checkpoints/resnet18/best.pt",
+    "checkpoint_sha256": "4d312113394e92367297adc9e16aef2f0442e97b44b8316647c331ec630c38a4",
+    "best_epoch": 8
+  },
+  "benchmark_image": "test/Brinjal/0871.jpg",
+  "models": {
+    "baseline": {
+      "best_epoch": 3,
+      "best_validation_loss": 0.08054727172851563,
+      "best_validation_accuracy": 0.978,
+      "parameter_count": 94117,
+      "training_wall_seconds": 115.56060879999859,
+      "test": {
+        "accuracy": 0.977,
+        "macro": {
+          "precision": 0.977025526137014,
+          "recall": 0.977,
+          "f1": 0.9769712691966627
+        },
+        "per_class": {
+          "Brinjal": {
+            "precision": 0.9651741293532339,
+            "recall": 0.97,
+            "f1": 0.9675810473815462,
+            "support": 200
+          },
+          "Broccoli": {
+            "precision": 0.9655172413793104,
+            "recall": 0.98,
+            "f1": 0.9727047146401985,
+            "support": 200
+          },
+          "Carrot": {
+            "precision": 0.9900990099009901,
+            "recall": 1.0,
+            "f1": 0.9950248756218906,
+            "support": 200
+          },
+          "Potato": {
+            "precision": 0.9949494949494949,
+            "recall": 0.985,
+            "f1": 0.9899497487437185,
+            "support": 200
+          },
+          "Tomato": {
+            "precision": 0.9693877551020408,
+            "recall": 0.95,
+            "f1": 0.9595959595959596,
+            "support": 200
+          }
+        },
+        "test_count": 1000,
+        "correct_count": 977
+      },
+      "latency": {
+        "device": "cuda",
+        "batch_size": 1,
+        "warmup": 20,
+        "repetitions": 100,
+        "model_forward_only": {
+          "mean_ms": 0.5466639998485334,
+          "median_ms": 0.44179999895277433,
+          "p95_ms": 0.8382049985812042,
+          "scope": "Model forward on a resident tensor, excluding preprocessing, transfers, softmax, and model load."
+        },
+        "file_to_scores": {
+          "mean_ms": 2.5071370000659954,
+          "median_ms": 2.412199997706921,
+          "p95_ms": 3.472779998992337,
+          "scope": "File read and decode, EXIF/RGB conversion, resizing, normalization, transfers, model forward, and CPU softmax score output. Excludes model load and Gradio/browser overhead."
+        }
+      },
+      "original_diagnostic": {
+        "correct": 2,
+        "count": 5,
+        "photos": [
+          {
+            "filename": "brinjal.jpeg",
+            "true_class": "Brinjal",
+            "predicted_class": "Potato",
+            "predicted_class_score": 0.7004600167274475,
+            "correct": false
+          },
+          {
+            "filename": "broccoli.jpeg",
+            "true_class": "Broccoli",
+            "predicted_class": "Tomato",
+            "predicted_class_score": 0.5280025601387024,
+            "correct": false
+          },
+          {
+            "filename": "carrot.jpeg",
+            "true_class": "Carrot",
+            "predicted_class": "Tomato",
+            "predicted_class_score": 0.5317606329917908,
+            "correct": false
+          },
+          {
+            "filename": "potato.jpeg",
+            "true_class": "Potato",
+            "predicted_class": "Potato",
+            "predicted_class_score": 0.5288492441177368,
+            "correct": true
+          },
+          {
+            "filename": "tomato.jpeg",
+            "true_class": "Tomato",
+            "predicted_class": "Tomato",
+            "predicted_class_score": 0.4778863191604614,
+            "correct": true
+          }
+        ]
+      }
+    },
+    "resnet18": {
+      "best_epoch": 8,
+      "best_validation_loss": 5.7110311463475225e-06,
+      "best_validation_accuracy": 1.0,
+      "parameter_count": 11179077,
+      "training_wall_seconds": 326.44356229999903,
+      "test": {
+        "accuracy": 1.0,
+        "macro": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "per_class": {
+          "Brinjal": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 200
+          },
+          "Broccoli": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 200
+          },
+          "Carrot": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 200
+          },
+          "Potato": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 200
+          },
+          "Tomato": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 200
+          }
+        },
+        "test_count": 1000,
+        "correct_count": 1000
+      },
+      "latency": {
+        "device": "cuda",
+        "batch_size": 1,
+        "warmup": 20,
+        "repetitions": 100,
+        "model_forward_only": {
+          "mean_ms": 4.264428999958909,
+          "median_ms": 3.664050000224961,
+          "p95_ms": 7.289880000826087,
+          "scope": "Model forward on a resident tensor, excluding preprocessing, transfers, softmax, and model load."
+        },
+        "file_to_scores": {
+          "mean_ms": 6.349326000163273,
+          "median_ms": 5.5478000012954,
+          "p95_ms": 11.408344999108522,
+          "scope": "File read and decode, EXIF/RGB conversion, resizing, normalization, transfers, model forward, and CPU softmax score output. Excludes model load and Gradio/browser overhead."
+        }
+      },
+      "original_diagnostic": {
+        "correct": 3,
+        "count": 5,
+        "photos": [
+          {
+            "filename": "brinjal.jpeg",
+            "true_class": "Brinjal",
+            "predicted_class": "Carrot",
+            "predicted_class_score": 0.9997112154960632,
+            "correct": false
+          },
+          {
+            "filename": "broccoli.jpeg",
+            "true_class": "Broccoli",
+            "predicted_class": "Broccoli",
+            "predicted_class_score": 0.8457454442977905,
+            "correct": true
+          },
+          {
+            "filename": "carrot.jpeg",
+            "true_class": "Carrot",
+            "predicted_class": "Carrot",
+            "predicted_class_score": 1.0,
+            "correct": true
+          },
+          {
+            "filename": "potato.jpeg",
+            "true_class": "Potato",
+            "predicted_class": "Carrot",
+            "predicted_class_score": 0.8968426585197449,
+            "correct": false
+          },
+          {
+            "filename": "tomato.jpeg",
+            "true_class": "Tomato",
+            "predicted_class": "Tomato",
+            "predicted_class_score": 0.9936140179634094,
+            "correct": true
+          }
+        ]
+      }
+    }
+  }
+}

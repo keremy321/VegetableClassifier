@@ -1,0 +1,7 @@
+# Install the platform-specific PyTorch and torchvision wheels first (see README.md).
+Pillow==13.0.0
+gradio==6.32.0
+matplotlib==3.11.2
+numpy==2.5.4
+scikit-learn==1.9.1
+scipy==1.18.1

@@ -1,0 +1,44 @@
+{
+  "checkpoint_sha256": "7e63ad147ac022e372febd6ed688d1bf7c25aea573223d99a3faf9ed542aedb6",
+  "best_epoch": 3,
+  "count": 5,
+  "correct": 2,
+  "exact_matches_in_dataset_splits": 0,
+  "photos": [
+    {
+      "filename": "brinjal.jpeg",
+      "true_class": "Brinjal",
+      "predicted_class": "Potato",
+      "predicted_class_score": 0.7004600167274475,
+      "correct": false
+    },
+    {
+      "filename": "broccoli.jpeg",
+      "true_class": "Broccoli",
+      "predicted_class": "Tomato",
+      "predicted_class_score": 0.5280025601387024,
+      "correct": false
+    },
+    {
+      "filename": "carrot.jpeg",
+      "true_class": "Carrot",
+      "predicted_class": "Tomato",
+      "predicted_class_score": 0.5317606329917908,
+      "correct": false
+    },
+    {
+      "filename": "potato.jpeg",
+      "true_class": "Potato",
+      "predicted_class": "Potato",
+      "predicted_class_score": 0.5288492441177368,
+      "correct": true
+    },
+    {
+      "filename": "tomato.jpeg",
+      "true_class": "Tomato",
+      "predicted_class": "Tomato",
+      "predicted_class_score": 0.4778863191604614,
+      "correct": true
+    }
+  ]
+}

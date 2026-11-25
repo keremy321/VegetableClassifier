@@ -1,0 +1,39 @@
+{
+  "image": "test/Brinjal/0871.jpg",
+  "baseline": {
+    "device": "cuda",
+    "batch_size": 1,
+    "warmup": 20,
+    "repetitions": 100,
+    "model_forward_only": {
+      "mean_ms": 0.5466639998485334,
+      "median_ms": 0.44179999895277433,
+      "p95_ms": 0.8382049985812042,
+      "scope": "Model forward on a resident tensor, excluding preprocessing, transfers, softmax, and model load."
+    },
+    "file_to_scores": {
+      "mean_ms": 2.5071370000659954,
+      "median_ms": 2.412199997706921,
+      "p95_ms": 3.472779998992337,
+      "scope": "File read and decode, EXIF/RGB conversion, resizing, normalization, transfers, model forward, and CPU softmax score output. Excludes model load and Gradio/browser overhead."
+    }
+  },
+  "resnet18": {
+    "device": "cuda",
+    "batch_size": 1,
+    "warmup": 20,
+    "repetitions": 100,
+    "model_forward_only": {
+      "mean_ms": 4.264428999958909,
+      "median_ms": 3.664050000224961,
+      "p95_ms": 7.289880000826087,
+      "scope": "Model forward on a resident tensor, excluding preprocessing, transfers, softmax, and model load."
+    },
+    "file_to_scores": {
+      "mean_ms": 6.349326000163273,
+      "median_ms": 5.5478000012954,
+      "p95_ms": 11.408344999108522,
+      "scope": "File read and decode, EXIF/RGB conversion, resizing, normalization, transfers, model forward, and CPU softmax score output. Excludes model load and Gradio/browser overhead."
+    }
+  }
+}

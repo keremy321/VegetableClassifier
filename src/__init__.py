@@ -1,0 +1,1 @@
+"""Five-class vegetable classification."""

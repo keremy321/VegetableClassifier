@@ -1,0 +1,45 @@
+{
+  "method": "EXIF-oriented luma, 32x32 Lanczos resize, 8x8 low-frequency orthonormal DCT, DC excluded, median-thresholded 63 bits",
+  "distance": "minimum Hamming distance over direct alignment and a horizontal mirror of either image",
+  "threshold": 8,
+  "manifest_sha256": "bc0b31b0e41a4c137666405d4f49c8fd5b0c208a5fd3bfdbaf861f872be5d116",
+  "images_by_split": {
+    "train": 5000,
+    "validation": 1000,
+    "test": 1000
+  },
+  "split_pairs": {
+    "train / validation": {
+      "comparisons": 5000000,
+      "candidates": 1767,
+      "same_label": 1765,
+      "unique_a": 956,
+      "unique_b": 410
+    },
+    "train / test": {
+      "comparisons": 5000000,
+      "candidates": 1436,
+      "same_label": 1435,
+      "unique_a": 841,
+      "unique_b": 348
+    },
+    "validation / test": {
+      "comparisons": 1000000,
+      "candidates": 334,
+      "same_label": 334,
+      "unique_a": 194,
+      "unique_b": 190
+    }
+  },
+  "total_comparisons": 11000000,
+  "candidates": 3537,
+  "different_folder_label_candidates": 3,
+  "manifest_exact_rgb_matches": 0,
+  "distance_counts": {
+    "0": 107,
+    "2": 489,
+    "4": 715,
+    "6": 1001,
+    "8": 1225
+  }
+}
